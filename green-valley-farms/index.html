@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Valley Farms</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+  <header>
+    <h1>Green Valley Farms</h1>
+    <p>A family-run farm outside Kumasi, Ghana &mdash; growing maize, cassava, vegetables, and cocoa.</p>
+    <p class="badge">Family-run since the first harvest</p>
+  </header>
+
+  <nav class="site-nav" aria-label="Site sections">
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#crops">What We Grow</a></li>
+      <li><a href="#harvest">This Week's Prices</a></li>
+      <li><a href="#gallery">Our Produce</a></li>
+      <li><a href="#visit">Visit the Farm</a></li>
+      <li><a href="#order">Order Produce</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <article>
+        <p>
+          Green Valley Farms has been <strong>family-owned</strong> for three
+          generations. We grow <em>maize</em>, <em>cassava</em>, and a small
+          plot of <i lang="la">Theobroma cacao</i> &mdash; the scientific name
+          for cocoa &mdash; alongside seasonal vegetables.
+        </p>
+        <p>
+          We follow <b>organic</b> growing practices wherever we can, and we
+          sell directly to the local community rather than through middlemen.
+          Our soil is what farmers here call <u>"red earth"</u> &mdash; iron-rich
+          clay loam that drains well after the rains.
+        </p>
+      </article>
+    </section>
+
+    <hr />
+
+    <section id="crops">
+      <h2>What We Grow</h2>
+      <p>Our staple crops, in no particular order:</p>
+      <ul class="chip-list">
+        <li>Maize</li>
+        <li>Cassava</li>
+        <li>Tomatoes</li>
+        <li>Onions</li>
+        <li>Plantain</li>
+        <li>Cocoa</li>
+        <li>Groundnuts</li>
+      </ul>
+
+      <h3>Our Planting Calendar</h3>
+      <p>Unlike the list above, this order matters &mdash; each step depends on the one before it:</p>
+      <ol class="timeline">
+        <li>Clear and till the land (February&ndash;March)</li>
+        <li>Sow seeds at the start of the rains (April)</li>
+        <li>Weed and tend the growing crop (May&ndash;July)</li>
+        <li>Harvest (August&ndash;September)</li>
+        <li>Dry and store produce (September&ndash;October)</li>
+      </ol>
+
+      <aside>
+        <p>
+          <strong>Harmattan Tip:</strong> when the dry, dusty Harmattan wind
+          arrives (around December), we mulch young plants to keep moisture in
+          the soil. It isn't part of the main planting calendar, but it's one
+          of the first things we teach new farmhands.
+        </p>
+      </aside>
+
+      <h3>Farming Terms</h3>
+      <dl class="glossary">
+        <div>
+          <dt>Intercropping</dt>
+          <dd>Growing two or more crops &mdash; such as maize and cassava &mdash; in the same field at once.</dd>
+        </div>
+        <div>
+          <dt>Fallow</dt>
+          <dd>Leaving a field unplanted for a season so the soil can recover.</dd>
+        </div>
+        <div>
+          <dt>Harmattan</dt>
+          <dd>The dry, dusty trade wind that blows across West Africa roughly from November to March.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <hr />
+
+    <section id="harvest">
+      <h2>This Week's Produce Prices</h2>
+      <table>
+        <caption>Green Valley Farms &mdash; current prices in Ghana cedis (GHS)</caption>
+        <colgroup>
+          <col />
+          <col span="3" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">Category</th>
+            <th scope="col">Produce</th>
+            <th scope="col">Unit</th>
+            <th scope="col">Price (GHS)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" rowspan="2">Staples</th>
+            <td>Maize</td>
+            <td>per bag</td>
+            <td>15.00</td>
+          </tr>
+          <tr class="shade">
+            <td>Cassava</td>
+            <td>per bag</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">Vegetables</th>
+            <td>Tomatoes</td>
+            <td>per basket</td>
+            <td>25.00</td>
+          </tr>
+          <tr class="shade">
+            <td>Onions</td>
+            <td>per bag</td>
+            <td>20.00</td>
+          </tr>
+          <tr>
+            <th scope="row">Fruit</th>
+            <td>Plantain</td>
+            <td>per bunch</td>
+            <td>12.00</td>
+          </tr>
+          <tr class="shade">
+            <th scope="row">Cash Crop</th>
+            <td>Cocoa</td>
+            <td>per bag</td>
+            <td>40.00</td>
+          </tr>
+          <tr>
+            <td colspan="4">Prices may change slightly during the Harmattan season.</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Prices updated weekly, every Monday.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr />
+
+    <section id="gallery">
+      <h2>Our Produce</h2>
+      <div class="produce-grid">
+        <figure>
+          <img src="assets/maize.svg" alt="An ear of maize with its husk peeled back" width="70" height="70" />
+          <figcaption>Maize</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/cassava.svg" alt="A cassava root" width="70" height="70" />
+          <figcaption>Cassava</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/tomato.svg" alt="A ripe tomato with its stem" width="70" height="70" />
+          <figcaption>Tomatoes</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/onion.svg" alt="An onion bulb" width="70" height="70" />
+          <figcaption>Onions</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/plantain.svg" alt="A bunch of plantain" width="70" height="70" />
+          <figcaption>Plantain</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/cocoa.svg" alt="A cocoa pod" width="70" height="70" />
+          <figcaption>Cocoa</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="visit">
+      <h2>Visit the Farm</h2>
+      <p>
+        Green Valley Farms<br />
+        Ejisu Road<br />
+        Kumasi, Ashanti Region<br />
+        Ghana
+      </p>
+      <p class="contact-links">
+        <a href="tel:+233200000000">&#9742; Call us: +233 20 000 0000</a>
+        <a href="mailto:hello@greenvalleyfarms.example?subject=Farm%20Visit%20Enquiry">&#9993; Email us about a farm visit</a>
+      </p>
+      <p class="back-to-top"><a href="#top">&#8593; Back to top</a></p>
+    </section>
+
+    <hr />
+
+    <section id="order">
+      <h2>Order Produce</h2>
+      <p id="order-status" class="status-msg" aria-live="polite"></p>
+
+      <form id="order-form">
+
+        <fieldset>
+          <legend>Select produce <span class="req">(choose at least one)</span></legend>
+          <p>
+            <label><input type="checkbox" name="produce" value="Maize" data-price="15" /> Maize &mdash; GHS 15.00/bag</label><br />
+            <label><input type="checkbox" name="produce" value="Cassava" data-price="10" /> Cassava &mdash; GHS 10.00/bag</label><br />
+            <label><input type="checkbox" name="produce" value="Tomatoes" data-price="25" /> Tomatoes &mdash; GHS 25.00/basket</label><br />
+            <label><input type="checkbox" name="produce" value="Onions" data-price="20" /> Onions &mdash; GHS 20.00/bag</label><br />
+            <label><input type="checkbox" name="produce" value="Plantain" data-price="12" /> Plantain &mdash; GHS 12.00/bunch</label><br />
+            <label><input type="checkbox" name="produce" value="Cocoa" data-price="40" /> Cocoa &mdash; GHS 40.00/bag</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="qty">Units of each selected item <span class="req">*</span></label><br />
+          <input type="number" id="qty" name="qty" min="1" max="20" step="1" value="1" required />
+        </p>
+
+        <p class="total-box">
+          <strong>Estimated total:</strong>
+          GHS <output id="order-total" for="qty">0.00</output>
+        </p>
+
+        <fieldset>
+          <legend>Delivery method <span class="req">(required)</span></legend>
+          <label><input type="radio" name="delivery" value="Pickup" required /> Pickup at the farm</label><br />
+          <label><input type="radio" name="delivery" value="Delivery" /> Delivery in Kumasi (small fee applies)</label>
+        </fieldset>
+
+        <p>
+          <label for="customer-name">Your name <span class="req">*</span></label><br />
+          <input type="text" id="customer-name" name="customer-name" required autocomplete="name" />
+        </p>
+
+        <p>
+          <label for="customer-phone">Phone number <span class="req">*</span></label><br />
+          <input type="tel" id="customer-phone" name="customer-phone" required autocomplete="tel" />
+        </p>
+
+        <p>
+          <label for="order-date">Preferred collection/delivery date <span class="req">*</span></label><br />
+          <input type="date" id="order-date" name="order-date" min="2026-10-10" required />
+        </p>
+
+        <p>
+          <label for="notes">Special instructions</label><br />
+          <textarea id="notes" name="notes" maxlength="200" rows="3"></textarea><br />
+          <output id="notes-count" for="notes">200</output> characters remaining
+        </p>
+
+        <p>
+          <label><input type="checkbox" name="newsletter" /> Send me news about the next harvest</label>
+        </p>
+
+        <p>
+          <button type="submit">Place Order</button>
+        </p>
+      </form>
+
+      <dialog id="order-dialog" aria-labelledby="order-dialog-title">
+        <form method="dialog">
+          <h2 id="order-dialog-title">Order Received</h2>
+          <p>Thank you &mdash; here is what was submitted (nothing left this device):</p>
+          <table>
+            <caption>Order summary</caption>
+            <tbody id="order-summary-body"></tbody>
+          </table>
+          <button type="submit">Close</button>
+        </form>
+      </dialog>
+
+      <p class="back-to-top"><a href="#top">&#8593; Back to top</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Green Valley Farms, Kumasi, Ghana.</p>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      const produceBoxes = document.querySelectorAll('input[name="produce"]');
+      const qtyInput = document.getElementById('qty');
+      const totalOutput = document.getElementById('order-total');
+
+      function refreshTotal() {
+        let sum = 0;
+        produceBoxes.forEach((box) => {
+          if (box.checked) {
+            sum += Number(box.dataset.price);
+          }
+        });
+        const qty = Number(qtyInput.value) || 0;
+        totalOutput.textContent = (sum * qty).toFixed(2);
+      }
+
+      produceBoxes.forEach((box) => box.addEventListener('change', refreshTotal));
+      qtyInput.addEventListener('input', refreshTotal);
+      refreshTotal();
+
+      const notesInput = document.getElementById('notes');
+      const notesCount = document.getElementById('notes-count');
+
+      function refreshNotesCount() {
+        notesCount.textContent = Number(notesInput.maxLength) - notesInput.value.length;
+      }
+      notesInput.addEventListener('input', refreshNotesCount);
+      refreshNotesCount();
+
+      const form = document.getElementById('order-form');
+      const statusEl = document.getElementById('order-status');
+      const dialog = document.getElementById('order-dialog');
+      const summaryBody = document.getElementById('order-summary-body');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const checkedBoxes = Array.from(produceBoxes).filter((box) => box.checked);
+        if (checkedBoxes.length === 0) {
+          statusEl.textContent = 'Please select at least one item before placing an order.';
+          return;
+        }
+        statusEl.textContent = '';
+
+        summaryBody.innerHTML = '';
+        const data = new FormData(form);
+
+        checkedBoxes.forEach((box) => {
+          const row = document.createElement('tr');
+          const th = document.createElement('th');
+          th.scope = 'row';
+          th.textContent = box.value;
+          const td = document.createElement('td');
+          td.textContent = qtyInput.value + ' unit(s)';
+          row.append(th, td);
+          summaryBody.appendChild(row);
+        });
+
+        ['customer-name', 'customer-phone', 'delivery', 'order-date', 'notes'].forEach((key) => {
+          const value = data.get(key);
+          if (!value) return;
+          const row = document.createElement('tr');
+          const th = document.createElement('th');
+          th.scope = 'row';
+          th.textContent = key;
+          const td = document.createElement('td');
+          td.textContent = value;
+          row.append(th, td);
+          summaryBody.appendChild(row);
+        });
+
+        const totalRow = document.createElement('tr');
+        const totalTh = document.createElement('th');
+        totalTh.scope = 'row';
+        totalTh.textContent = 'Estimated total';
+        const totalTd = document.createElement('td');
+        totalTd.textContent = 'GHS ' + totalOutput.textContent;
+        totalRow.append(totalTh, totalTd);
+        summaryBody.appendChild(totalRow);
+
+        dialog.showModal();
+      });
+    })();
+  </script>
+
+</body>
+</html>

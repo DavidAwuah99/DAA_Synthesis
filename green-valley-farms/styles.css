@@ -1,0 +1,366 @@
+/* ===========================================================
+   Base box model
+   The exact box-sizing reset pattern from the Box Model lesson
+   =========================================================== */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0 0 2em;
+  line-height: 1.5;
+  background: #faf6ec;
+  color: #2b2016;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.2em;
+}
+
+h2 {
+  color: #1f4d2c;
+  border-bottom: 3px solid #d8a63d;
+}
+
+h3 {
+  color: #5c3d22;
+}
+
+a:link {
+  color: #1f4d2c;
+}
+
+a:visited {
+  color: #2f6b3f;
+}
+
+a:hover {
+  color: #a87a1f;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #d8a63d;
+  margin: 2em 0;
+}
+
+/* ===========================================================
+   Header
+   =========================================================== */
+
+header {
+  background: #1f4d2c;
+  color: #fffdf8;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+header h1 {
+  margin: 0 0 0.3em;
+  font-size: 2.2em;
+}
+
+header p {
+  margin: 0;
+}
+
+/* A small rotated badge using transform: rotate(), same function
+   taught in the "Getting started with CSS" lesson */
+.badge {
+  display: inline-block;
+  background: #d8a63d;
+  color: #1f4d2c;
+  font-weight: bold;
+  padding: 0.3em 0.9em;
+  border: 2px solid #a87a1f;
+  margin-top: 1em;
+  transform: rotate(-3deg);
+}
+
+/* ===========================================================
+   Nav
+   li set to inline-block so the row doesn't break, and a as
+   inline-block too so its padding doesn't overflow its li --
+   the exact practical pattern from the Box Model lesson
+   =========================================================== */
+
+.site-nav {
+  background: #e6f0e8;
+  border-top: 1px solid #cfe3d3;
+  border-bottom: 1px solid #cfe3d3;
+  text-align: center;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  display: inline-block;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 0.6em 1em;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  background: #d8a63d;
+  color: #fffdf8;
+}
+
+/* ===========================================================
+   Section boxes
+   =========================================================== */
+
+section {
+  background: #fffdf8;
+  border: 1px solid #e3d9c4;
+  padding: 1.5em 1.8em;
+  margin: 1.5em 0;
+}
+
+/* ===========================================================
+   Crops: chip list, timeline, glossary
+   =========================================================== */
+
+.chip-list {
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.chip-list li {
+  display: inline-block;
+  background: #e6f0e8;
+  color: #1f4d2c;
+  border: 1px solid #cfe3d3;
+  padding: 0.4em 1em;
+  margin: 0 0.4em 0.4em 0;
+}
+
+.timeline {
+  margin: 1em 0;
+  padding-left: 1.4em;
+}
+
+.timeline li {
+  padding: 0.35em 0;
+}
+
+/* Next-sibling combinator: a dashed rule between steps,
+   none above the first one */
+.timeline li + li {
+  border-top: 1px dashed #cfe3d3;
+}
+
+aside {
+  background: #fdf3df;
+  border: 1px solid #a87a1f;
+  padding: 0.8em 1.1em;
+  margin: 1em 0;
+}
+
+.glossary {
+  margin: 1em 0;
+}
+
+/* Descendant combinator: style dt/dd only inside .glossary */
+.glossary div {
+  border-top: 1px solid #e3d9c4;
+  padding: 0.6em 0;
+}
+
+.glossary dt {
+  color: #1f4d2c;
+  font-weight: bold;
+}
+
+.glossary dd {
+  margin: 0.2em 0 0;
+}
+
+/* ===========================================================
+   Harvest table
+   Alternating rows use a plain class, not :nth-of-type
+   =========================================================== */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #5c3d22;
+}
+
+th,
+td {
+  border: 1px solid #e3d9c4;
+  padding: 0.55em 0.8em;
+  text-align: left;
+}
+
+thead th {
+  background: #1f4d2c;
+  color: #fffdf8;
+}
+
+tbody tr.shade {
+  background: #e6f0e8;
+}
+
+tfoot td {
+  font-style: italic;
+  color: #5c3d22;
+}
+
+/* ===========================================================
+   Gallery
+   inline-block figures so they sit in a row without flex/grid
+   =========================================================== */
+
+.produce-grid figure {
+  display: inline-block;
+  background: #faf6ec;
+  border: 1px solid #e3d9c4;
+  padding: 1em;
+  margin: 0 0.6em 0.6em 0;
+  width: 100px;
+  text-align: center;
+}
+
+.produce-grid figcaption {
+  margin-top: 0.4em;
+  color: #5c3d22;
+}
+
+/* ===========================================================
+   Visit
+   =========================================================== */
+
+.contact-links a {
+  display: inline-block;
+  background: #e6f0e8;
+  color: #1f4d2c;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin: 0.3em 0.4em 0.3em 0;
+}
+
+.contact-links a:hover {
+  background: #d8a63d;
+  color: #fffdf8;
+}
+
+.back-to-top a {
+  font-size: 0.9em;
+}
+
+/* ===========================================================
+   Order form
+   =========================================================== */
+
+fieldset {
+  border: 1px solid #e3d9c4;
+  background: #faf6ec;
+  padding: 1em 1.2em;
+  margin: 1em 0;
+}
+
+legend {
+  color: #1f4d2c;
+  font-weight: bold;
+  padding: 0 0.4em;
+}
+
+.req {
+  color: #a87a1f;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  padding: 0.4em 0.6em;
+  border: 1px solid #c9bfa6;
+  width: 100%;
+  max-width: 300px;
+}
+
+textarea {
+  max-width: 100%;
+}
+
+.total-box {
+  display: inline-block;
+  background: #e6f0e8;
+  border: 1px solid #1f4d2c;
+  padding: 0.6em 1.1em;
+}
+
+.total-box output {
+  color: #1f4d2c;
+  font-weight: bold;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1em;
+  background: #1f4d2c;
+  color: #fffdf8;
+  border: 2px solid #1f4d2c;
+  padding: 0.6em 1.6em;
+}
+
+.status-msg {
+  color: #8c1f1f;
+  font-weight: bold;
+}
+
+dialog {
+  font-family: "Times New Roman", Times, serif;
+  border: 2px solid #1f4d2c;
+  max-width: 420px;
+  width: 90%;
+  padding: 1.3em 1.6em;
+}
+
+/* ===========================================================
+   Footer
+   =========================================================== */
+
+footer {
+  background: #1f4d2c;
+  color: #e6f0e8;
+  text-align: center;
+  padding: 1.2em 1em;
+}
+
+/* ===========================================================
+   Responsive
+   =========================================================== */
+
+@media (width <= 30em) {
+  /* calc() keeps two per row with a gap between them, instead
+     of a fixed pixel width */
+  .produce-grid figure {
+    width: calc(50% - 0.6em);
+  }
+}
